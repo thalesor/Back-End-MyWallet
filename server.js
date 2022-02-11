@@ -21,6 +21,6 @@ app.get('/registry', verificaToken, getRegistries);
 
 app.delete('/session', deleteSession);
 
-app.listen('5000', (port) => {
-	console.log(`Server running :^)`);
+app.listen(process.env.PORT, (port) => {
+	console.log("Server running on port " + process.env.PORT);
 });

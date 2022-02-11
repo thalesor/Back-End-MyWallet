@@ -1,12 +1,13 @@
 {
-  "name": "back-bate-papo-uol",
+  "name": "back-end-mywallet",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
-  "main": "database.js",
-  "type": "module",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon start server.js"
+    "start": "node ./server.js",
+		"dev": "npx nodemon ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
