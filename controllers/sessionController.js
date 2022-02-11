@@ -24,7 +24,6 @@ async function verificaToken(req, res, next) {
 	});
     
   if(user.length) {
-        console.log(req.body);
         delete user[0].password;
         res.locals.user = user[0];
         if(req.method === 'POST')
